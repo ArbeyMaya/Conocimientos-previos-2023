@@ -4,27 +4,24 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Document</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
 
         <!--INICIO-->
-        <section>
-            <div>
+        <section id="inicio">
+            <div id="container">
                 <h1>Conocimientos previos 2023</h1>
 
 
-                <div>
+                <div id="container_botones">
                     <div>
-                        <button>Git</button>
-                    </div>
-                    <div>
-                        <button>HTML5</button>
-                    </div>
-                    <div>
-                        <button>CSS3</button>
-                    </div>
-                    <div>
-                        <button>JavaScript</button>
+                        <ul>
+                            <li><a href="#git">Git</a></li>
+                            <li><a href="#html5">Html5</a></li>
+                            <li><a href="#css3">Css3</a></li>
+                            <li><a href="#javascript">JavaScript</a></li>
+                        </ul> 
                     </div>
                 </div>
             </div>
@@ -328,7 +325,7 @@
             </div>
 
             <div>
-                <h2> Fondos y bordes</h2>
+                <h2>Fondos y bordes</h2>
                 <p>
                     En CSS3, los fondos y los bordes son propiedades que permiten agregar estilos visuales a los elementos HTML, como divs, párrafos, encabezados y más. Estas propiedades son fundamentales para diseñar y dar estilo a las interfaces de usuario web. Aquí te explico más sobre ellos:
                 </p>
@@ -341,6 +338,63 @@
                     <li><strong>border-radius: </strong>Define el radio de la esquina del borde, creando esquinas redondeadas.</li>
                 </ul>
             </div>
+
+            <div>
+                <h2>Modelo de cajas</h2>
+                <p>
+                    El "Modelo de Cajas" en CSS3 es un concepto fundamental que describe cómo se representan y se organiza el contenido en una página web. Básicamente, en CSS, cada elemento HTML se representa como una "caja" rectangular que consiste en contenido, relleno (padding), borde (border) y margen (margin). Este modelo permite controlar la presentación y el diseño de los elementos en una página web.
+                </p>
+
+                <ul>
+                    <li><strong>width, height: </strong>Controlan el ancho y la altura del contenido de la caja.</li>
+                    <li><strong>padding: </strong>Define el espacio entre el contenido y el borde.</li>
+                    <li><strong>border: </strong>Establece el estilo, ancho y color del borde.</li>
+                    <li><strong>margin: </strong>Define el espacio entre el borde del elemento y otros elementos adyacentes.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Position </h2>
+                <p>
+                    En CSS3, la propiedad position se utiliza para controlar la posición de un elemento en una página web. Esta propiedad puede tomar varios valores, cada uno de los cuales determina cómo se posiciona el elemento en relación con su contenedor o con otros elementos en la página.
+                </p>
+
+                <ul>
+                    <li><strong>static: </strong>Este es el valor predeterminado. Los elementos con posición estática se muestran en el orden normal del flujo del documento. Ignora las propiedades top, right, bottom y left.</li>
+                    <li><strong>relative: </strong>Los elementos con posición relativa se posicionan en relación con su posición normal. Esto significa que puedes desplazar el elemento utilizando las propiedades top, right, bottom y left, sin afectar la posición de otros elementos en la página. Sin embargo, el espacio que ocupa el elemento permanece reservado en el flujo del documento.</li>
+                    <li><strong>absolute: </strong>Los elementos con posición absoluta se posicionan en relación con el elemento padre más cercano que tenga una posición diferente a static. Si no hay ningún elemento padre con una posición diferente a static, el elemento se posicionará en relación con el viewport (la ventana del navegador). Los elementos con posición absoluta no afectan el diseño de otros elementos y se pueden superponer.</li>
+                    <li><strong>fixed: </strong>Similar a absolute, pero los elementos con posición fija se posicionan en relación con el viewport en lugar de un elemento padre. Esto significa que el elemento permanecerá fijo en su posición incluso cuando la página se desplace.</li>
+                    <li><strong>sticky: </strong>Los elementos con posición pegajosa se comportan como relativos hasta que se desplaza más allá de cierto umbral definido por las propiedades top, right, bottom o left, momento en el cual se comportarán como fixed y permanecerán fijos en esa posición mientras la página se desplaza.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Display</h2>
+                <p> En CSS3, la propiedad display determina cómo se muestra un elemento HTML en la página web. Es una propiedad fundamental que controla el comportamiento de diseño de un elemento y cómo interactúa con otros elementos en el documento.
+                </p>
+
+                <ul>
+                    <li><strong>block: </strong>Los elementos con display: block se comportan como bloques en línea que ocupan todo el ancho disponible en su contenedor y comienzan en una nueva línea. Ejemplos de etiquetas HTML que pueden tener display: block incluyen div, p, h1 a h6, ul, ol, etc.</li>
+                    <li><strong>inline: </strong>Los elementos con display: inline se muestran en la misma línea que el contenido circundante y solo ocupan el espacio necesario para su contenido. Ejemplos de etiquetas HTML que pueden tener display: inline incluyen span, a, strong, em, img, etc.</li>
+                    <li><strong>inline-block: </strong>Combina las características de elementos en línea y en bloque. Los elementos con display: inline-block se comportan como elementos en línea, pero permiten establecer propiedades de ancho y altura. Esto los hace útiles para crear diseños más complejos sin perder la capacidad de alinear elementos horizontalmente. Por ejemplo, los elementos input y button suelen tener display: inline-block.</li>
+                    <li><strong>flex: </strong>Introduce un modelo de diseño flexible que facilita el posicionamiento y el ajuste del tamaño de los elementos dentro de su contenedor. Los elementos con display: flex se distribuyen de manera flexible dentro de su contenedor, lo que permite controlar el tamaño, el orden y la alineación de los elementos hijos. Esto es especialmente útil para diseñar diseños complejos y responsivos. Puedes aplicar esta propiedad a cualquier elemento HTML, como div, section, etc.</li>
+                    <li><strong>grid: </strong>Introduce un modelo de diseño basado en rejillas que permite organizar los elementos en filas y columnas. Los elementos con display: grid se colocan en una cuadrícula definida por el desarrollador, lo que facilita la creación de diseños más complejos y estructurados. Esto es especialmente útil para diseños más elaborados que requieren un posicionamiento preciso de los elementos. Puedes aplicar esta propiedad a cualquier elemento HTML, como div, section, etc.</li>
+                </ul>
+            </div>
+
+            <div>
+                <h2>Responsive Design “Media Queries”</h2>
+                <p>
+                    Los "Media Queries" son una característica importante en CSS3 que permiten crear diseños web receptivos o responsive design. Con media queries, puedes aplicar estilos específicos basados en las características del dispositivo o las características de visualización del navegador, como el tamaño de la pantalla, la orientación, la densidad de píxeles, etc. Esto te permite crear diseños web que se adapten y respondan de manera inteligente a diferentes dispositivos y tamaños de pantalla.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h1>JavaScript</h1>
+            <p>
+                JavaScript es un lenguaje de programación de alto nivel que se utiliza principalmente en el desarrollo web para agregar interactividad y dinamismo a las páginas web. Es un lenguaje interpretado, lo que significa que el código fuente se ejecuta directamente por un intérprete o navegador web sin necesidad de ser compilado previamente.
+            </p>
         </section>
 
     </body>

@@ -10,25 +10,19 @@
 
         <!--INICIO-->
         <section id="inicio">
-            <div id="container">
-                <h1>Conocimientos previos 2023</h1>
+                <nav><div id="div-inicio"><h1 class="h1-inicio">Conocimientos previos 2023</h1></div></nav>
 
-
-                <div id="container_botones">
-                    <div>
-                        <ul>
-                            <li><a href="#git">Git</a></li>
-                            <li><a href="#html5">Html5</a></li>
-                            <li><a href="#css3">Css3</a></li>
-                            <li><a href="#javascript">JavaScript</a></li>
-                        </ul> 
+                    <div class="btn-container">
+                        <a href="#git"><img class="icons-inicio" src="/img/git.png" alt="GIT"></a>
+                        <a href="#html5"><img class="icons-inicio" src="/img/html5.png" alt="html5"></a>
+                        <a href="#css3"><img class="icons-inicio" src="/img/css3.png" alt="css3"></a>
+                        <a href="#javascript"><img class="icons-inicio" src="/img/javascript.png" alt="javascript"></a>
+                        <a href="#mysql"><img class="icons-inicio" src="/img/mysql.png" alt="mysql"></a>
                     </div>
-                </div>
-            </div>
         </section>
 
         <!--GIT-->
-        <section>
+        <section id="git">
 
             <div>
                 <h1>Git</h1>
@@ -103,7 +97,7 @@
         </section>
 
         <!--HTML5-->
-        <section>
+        <section id="html5">
 
             <div>
                 <h1>HTML5</h1>
@@ -260,7 +254,7 @@
         </section>
 
         <!--CSS3-->
-        <section>
+        <section id="css3">
             <h1>Hojas de estilo en cascada CSS 3</h1>
             <p>
                 CSS (Cascading Style Sheets) es un lenguaje de estilo utilizado para describir el aspecto y el formato de un documento HTML o XML. Permite definir el diseño, la presentación y la apariencia visual de una página web, separando así la estructura y el contenido del diseño y el estilo. CSS se utiliza para aplicar estilos como colores, fuentes, márgenes, bordes, tamaños, posicionamiento y más a los elementos de una página web.
@@ -390,11 +384,54 @@
             </div>
         </section>
 
-        <section>
+        <section id="javascript">
             <h1>JavaScript</h1>
             <p>
                 JavaScript es un lenguaje de programación de alto nivel que se utiliza principalmente en el desarrollo web para agregar interactividad y dinamismo a las páginas web. Es un lenguaje interpretado, lo que significa que el código fuente se ejecuta directamente por un intérprete o navegador web sin necesidad de ser compilado previamente.
             </p>
+        </section>
+
+        <section id="mysql">
+            <h2>Mysql</h2>
+            <p>
+                MySQL es un sistema open source de administración de bases de datos que es desarrollado y soportado por Oracle. Esa es la respuesta corta de un enunciado a la pregunta de “qué es MySQL”, pero vamos a explicarla un poco mejor usando términos más simples. Una base de datos es una colección estructurada de datos que está organizada para ser usada y extraída de forma sencilla. Para un sitio de WordPress, esos “datos” son cosas como el texto de las publicaciones de su blog, información de todos los usuarios registrados en su sitio, datos autocargados, opciones importantes, configuraciones, etc. MySQL es sólo uno de los sistemas populares que pueden almacenar y administrar esos datos por usted, y es una solución de base de datos especialmente popular para sitios de WordPress. Lectura recomendada: Cómo Solucionar el Error «MySQL Server Has Gone Away» en WordPress y Cómo Solucionar el Error MySQL 1064. Ahora vamos a ser un poco más específicos cuando se trata de esta pregunta.
+            </p>
+
+            <p>
+                Para poder entender como funciona MySQL, es importante conocer dos conceptos conectados:
+            </p>
+
+            <ul>
+                <li>Bases de datos relacionales</li>
+                <li>Modelo cliente servidor</li>
+            </ul>
+
+            <h3>Bases de datos relacionales</h3>
+            <p>
+                Cuando se trata de almacenar datos en una base de datos, hay distintos enfoques que usted puede utilizar. MySQL opta por un enfoque llamado una base de datos relacional. Con una base de datos relacional, sus datos son fragmentados en varias áreas de almacenamiento separadas – llamadas tablas – en lugar de poner todo junto en una gran unidad de almacenamiento.
+            </p>
+            <p>
+                Por ejemplo, digamos que quiere almacenar dos tipos de información:
+            </p>
+            <ul>
+                <li><strong>Clientes: </strong>su nombre, dirección, detalles, etc.</li>
+                <li><strong>Pedidos: </strong>como los productos que compran, el precio, quién hizo la orden, etc.</li>
+            </ul>
+
+            <h3>Modelo cliente servidor</h3>
+            <p>
+                Más allá del sistema de bases de datos relacional, MySQL también utiliza algo llamado el modelo cliente-servidor. La parte de servidor es donde sus datos realmente residen. Pero, para poder acceder a estos datos, usted deberá pedirlos. Aquí es donde entra el cliente.
+            </p>
+            <p>
+                Usando SQL- el lenguaje de programación que mencionamos anteriormente – el cliente envía una petición al servidor de la base de datos para los datos que el cliente necesita.
+            </p>
+            <p>
+                Por ejemplo, si alguien visita una publicación de un blog en su sitio, su sitio de WordPress enviará múltiples peticiones SQL al servidor de la base de datos para obtener toda la información que necesita para entregar la publicación del blog al navegador del visitante. Haría:
+            </p>
+            <ul>
+                <li>consulta a la tabla <strong>wp_posts</strong>para obtener contenido para la publicación del blog</li>
+                <li>Consulta a la tabla de <strong>wp_users</strong>para obtener información para la casilla del autor (utilizando la llave que le mostramos anteriormente)</li>
+            </ul>
         </section>
 
     </body>

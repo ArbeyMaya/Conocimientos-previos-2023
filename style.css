@@ -1,3 +1,9 @@
+body {
+    background-color: #5D7BAD;
+    margin: 0;
+    padding: 0;
+}
+
 .icons-inicio {
     width: 150px;
     height: auto;
@@ -7,10 +13,19 @@
     height: 55vh;
 }
 
-#inicio {
+/*#inicio {
     display: flex;
     flex-direction: column;
     justify-content: center;
+} */
+
+#inicio {
+    background-image: url('/img/fondo-inicio.jpg');
+    background-size: cover;
+    background-position:left top;
+    height: 100vh;
+    color: white;
+    text-align: center;
 }
 
 .h1-inicio {
